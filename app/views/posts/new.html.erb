@@ -1,0 +1,7 @@
+<h1>新規投稿ページ</h1>
+
+<%= form_with url:"/posts",method: :post,class:"form",local:true do|form| %>
+    <%= form.text_field :content %>
+    <%= form.text_field :daytimedesu%>
+    <%= form.submit'投稿する' %>
+<% end %>
